@@ -1,0 +1,144 @@
+xst -intstyle ise -ifn "C:/radio/radio-p/fm_xmit.xst" -ofn "C:/radio/radio-p/fm_xmit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top_radio.ucf -p xc7z010-clg400-1 fm_xmit.ngc fm_xmit.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top_radio.ucf -p xc7z010-clg400-1 fm_xmit.ngc fm_xmit.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top_radio.ucf -p xc7z010-clg400-1 fm_xmit.ngc fm_xmit.ngd  
+xst -intstyle ise -ifn "C:/radio/radio-p/fm_xmit.xst" -ofn "C:/radio/radio-p/fm_xmit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top_radio.ucf -p xc7z010-clg400-1 fm_xmit.ngc fm_xmit.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o fm_xmit_map.ncd fm_xmit.ngd fm_xmit.pcf 
+par -w -intstyle ise -ol high -mt off fm_xmit_map.ncd fm_xmit.ncd fm_xmit.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml fm_xmit.twx fm_xmit.ncd -o fm_xmit.twr fm_xmit.pcf -ucf top_radio.ucf 
+bitgen -intstyle ise -f fm_xmit.ut fm_xmit.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top_radio.ucf -uc ipcore_dir/clk_wiz_v3_6.ucf -p xc7z010-clg400-1 fm_xmit.ngc fm_xmit.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top_radio.ucf -p xc7z010-clg400-1 fm_xmit.ngc fm_xmit.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o fm_xmit_map.ncd fm_xmit.ngd fm_xmit.pcf 
+par -w -intstyle ise -ol high -mt off fm_xmit_map.ncd fm_xmit.ncd fm_xmit.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml fm_xmit.twx fm_xmit.ncd -o fm_xmit.twr fm_xmit.pcf -ucf top_radio.ucf 
+bitgen -intstyle ise -f fm_xmit.ut fm_xmit.ncd 
+xst -intstyle ise -ifn "C:/radio/radio-p/fm_xmit.xst" -ofn "C:/radio/radio-p/fm_xmit.syr" 
+xst -intstyle ise -ifn "C:/radio/radio-p/fm_xmit.xst" -ofn "C:/radio/radio-p/fm_xmit.syr" 
+xst -intstyle ise -ifn "C:/radio/radio-p/fm_xmit.xst" -ofn "C:/radio/radio-p/fm_xmit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top_radio.ucf -p xc7z010-clg400-1 fm_xmit.ngc fm_xmit.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o fm_xmit_map.ncd fm_xmit.ngd fm_xmit.pcf 
+par -w -intstyle ise -ol high -mt off fm_xmit_map.ncd fm_xmit.ncd fm_xmit.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml fm_xmit.twx fm_xmit.ncd -o fm_xmit.twr fm_xmit.pcf -ucf top_radio.ucf 
+bitgen -intstyle ise -f fm_xmit.ut fm_xmit.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top_radio.ucf -p xc7z010-clg400-1 fm_xmit.ngc fm_xmit.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o fm_xmit_map.ncd fm_xmit.ngd fm_xmit.pcf 
+par -w -intstyle ise -ol high -mt off fm_xmit_map.ncd fm_xmit.ncd fm_xmit.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml fm_xmit.twx fm_xmit.ncd -o fm_xmit.twr fm_xmit.pcf -ucf top_radio.ucf 
+bitgen -intstyle ise -f fm_xmit.ut fm_xmit.ncd 
+xst -intstyle ise -ifn "C:/radio/radio-p/fm_xmit.xst" -ofn "C:/radio/radio-p/fm_xmit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top_radio.ucf -p xc7z010-clg400-1 fm_xmit.ngc fm_xmit.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o fm_xmit_map.ncd fm_xmit.ngd fm_xmit.pcf 
+par -w -intstyle ise -ol high -mt off fm_xmit_map.ncd fm_xmit.ncd fm_xmit.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml fm_xmit.twx fm_xmit.ncd -o fm_xmit.twr fm_xmit.pcf -ucf top_radio.ucf 
+bitgen -intstyle ise -f fm_xmit.ut fm_xmit.ncd 
+xst -intstyle ise -ifn "C:/radio/radio-p/fm_xmit.xst" -ofn "C:/radio/radio-p/fm_xmit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top_radio.ucf -p xc7z010-clg400-1 fm_xmit.ngc fm_xmit.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o fm_xmit_map.ncd fm_xmit.ngd fm_xmit.pcf 
+par -w -intstyle ise -ol high -mt off fm_xmit_map.ncd fm_xmit.ncd fm_xmit.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml fm_xmit.twx fm_xmit.ncd -o fm_xmit.twr fm_xmit.pcf -ucf top_radio.ucf 
+bitgen -intstyle ise -f fm_xmit.ut fm_xmit.ncd 
+xst -intstyle ise -ifn "C:/radio/radio-p/fm_xmit.xst" -ofn "C:/radio/radio-p/fm_xmit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top_radio.ucf -p xc7z010-clg400-1 fm_xmit.ngc fm_xmit.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o fm_xmit_map.ncd fm_xmit.ngd fm_xmit.pcf 
+par -w -intstyle ise -ol high -mt off fm_xmit_map.ncd fm_xmit.ncd fm_xmit.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml fm_xmit.twx fm_xmit.ncd -o fm_xmit.twr fm_xmit.pcf -ucf top_radio.ucf 
+bitgen -intstyle ise -f fm_xmit.ut fm_xmit.ncd 
+xst -intstyle ise -ifn "C:/radio/radio-p/fm_xmit.xst" -ofn "C:/radio/radio-p/fm_xmit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top_radio.ucf -p xc7z010-clg400-1 fm_xmit.ngc fm_xmit.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o fm_xmit_map.ncd fm_xmit.ngd fm_xmit.pcf 
+par -w -intstyle ise -ol high -mt off fm_xmit_map.ncd fm_xmit.ncd fm_xmit.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml fm_xmit.twx fm_xmit.ncd -o fm_xmit.twr fm_xmit.pcf -ucf top_radio.ucf 
+bitgen -intstyle ise -f fm_xmit.ut fm_xmit.ncd 
+xst -intstyle ise -ifn "C:/radio/radio-p/fm_xmit.xst" -ofn "C:/radio/radio-p/fm_xmit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top_radio.ucf -p xc7z010-clg400-1 fm_xmit.ngc fm_xmit.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o fm_xmit_map.ncd fm_xmit.ngd fm_xmit.pcf 
+par -w -intstyle ise -ol high -mt off fm_xmit_map.ncd fm_xmit.ncd fm_xmit.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml fm_xmit.twx fm_xmit.ncd -o fm_xmit.twr fm_xmit.pcf -ucf top_radio.ucf 
+bitgen -intstyle ise -f fm_xmit.ut fm_xmit.ncd 
+xst -intstyle ise -ifn "C:/radio/radio-p/fm_xmit.xst" -ofn "C:/radio/radio-p/fm_xmit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top_radio.ucf -p xc7z010-clg400-1 fm_xmit.ngc fm_xmit.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o fm_xmit_map.ncd fm_xmit.ngd fm_xmit.pcf 
+par -w -intstyle ise -ol high -mt off fm_xmit_map.ncd fm_xmit.ncd fm_xmit.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml fm_xmit.twx fm_xmit.ncd -o fm_xmit.twr fm_xmit.pcf -ucf top_radio.ucf 
+bitgen -intstyle ise -f fm_xmit.ut fm_xmit.ncd 
+xst -intstyle ise -ifn "C:/radio/radio-p/fm_xmit.xst" -ofn "C:/radio/radio-p/fm_xmit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top_radio.ucf -uc C:/Users/Marina/Desktop/data/ps7_constraints.ucf -p xc7z010-clg400-1 fm_xmit.ngc fm_xmit.ngd  
+xst -intstyle ise -ifn "C:/radio/radio-p/fm_xmit.xst" -ofn "C:/radio/radio-p/fm_xmit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top_radio.ucf -p xc7z010-clg400-1 fm_xmit.ngc fm_xmit.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o fm_xmit_map.ncd fm_xmit.ngd fm_xmit.pcf 
+par -w -intstyle ise -ol high -mt off fm_xmit_map.ncd fm_xmit.ncd fm_xmit.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml fm_xmit.twx fm_xmit.ncd -o fm_xmit.twr fm_xmit.pcf -ucf top_radio.ucf 
+bitgen -intstyle ise -f fm_xmit.ut fm_xmit.ncd 
+xst -intstyle ise -ifn "C:/radio/radio-p/fm_xmit.xst" -ofn "C:/radio/radio-p/fm_xmit.syr" 
+xst -intstyle ise -ifn "C:/radio/radio-p/fm_xmit.xst" -ofn "C:/radio/radio-p/fm_xmit.syr" 
+xst -intstyle ise -ifn "C:/radio/radio-p/fm_xmit.xst" -ofn "C:/radio/radio-p/fm_xmit.syr" 
+xst -intstyle ise -ifn "C:/radio/radio-p/fm_xmit.xst" -ofn "C:/radio/radio-p/fm_xmit.syr" 
+xst -intstyle ise -ifn "C:/radio/radio-p/fm_xmit.xst" -ofn "C:/radio/radio-p/fm_xmit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top_radio.ucf -p xc7z010-clg400-1 fm_xmit.ngc fm_xmit.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o fm_xmit_map.ncd fm_xmit.ngd fm_xmit.pcf 
+par -w -intstyle ise -ol high -mt off fm_xmit_map.ncd fm_xmit.ncd fm_xmit.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml fm_xmit.twx fm_xmit.ncd -o fm_xmit.twr fm_xmit.pcf -ucf top_radio.ucf 
+bitgen -intstyle ise -f fm_xmit.ut fm_xmit.ncd 
+xst -intstyle ise -ifn "C:/radio/radio-p/fm_xmit.xst" -ofn "C:/radio/radio-p/fm_xmit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top_radio.ucf -p xc7z010-clg400-1 fm_xmit.ngc fm_xmit.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o fm_xmit_map.ncd fm_xmit.ngd fm_xmit.pcf 
+par -w -intstyle ise -ol high -mt off fm_xmit_map.ncd fm_xmit.ncd fm_xmit.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml fm_xmit.twx fm_xmit.ncd -o fm_xmit.twr fm_xmit.pcf -ucf top_radio.ucf 
+bitgen -intstyle ise -f fm_xmit.ut fm_xmit.ncd 
+xst -intstyle ise -ifn "C:/radio/radio-p/fm_xmit.xst" -ofn "C:/radio/radio-p/fm_xmit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top_radio.ucf -p xc7z010-clg400-1 fm_xmit.ngc fm_xmit.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o fm_xmit_map.ncd fm_xmit.ngd fm_xmit.pcf 
+xst -intstyle ise -ifn "C:/radio/radio-p/fm_xmit.xst" -ofn "C:/radio/radio-p/fm_xmit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top_radio.ucf -p xc7z010-clg400-1 fm_xmit.ngc fm_xmit.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o fm_xmit_map.ncd fm_xmit.ngd fm_xmit.pcf 
+par -w -intstyle ise -ol high -mt off fm_xmit_map.ncd fm_xmit.ncd fm_xmit.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml fm_xmit.twx fm_xmit.ncd -o fm_xmit.twr fm_xmit.pcf -ucf top_radio.ucf 
+bitgen -intstyle ise -f fm_xmit.ut fm_xmit.ncd 
+xst -intstyle ise -ifn "C:/radio/radio-p/fm_xmit.xst" -ofn "C:/radio/radio-p/fm_xmit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top_radio.ucf -p xc7z010-clg400-1 fm_xmit.ngc fm_xmit.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o fm_xmit_map.ncd fm_xmit.ngd fm_xmit.pcf 
+par -w -intstyle ise -ol high -mt off fm_xmit_map.ncd fm_xmit.ncd fm_xmit.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml fm_xmit.twx fm_xmit.ncd -o fm_xmit.twr fm_xmit.pcf -ucf top_radio.ucf 
+bitgen -intstyle ise -f fm_xmit.ut fm_xmit.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top_radio.ucf -p xc7z010-clg400-1 fm_xmit.ngc fm_xmit.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o fm_xmit_map.ncd fm_xmit.ngd fm_xmit.pcf 
+par -w -intstyle ise -ol high -mt off fm_xmit_map.ncd fm_xmit.ncd fm_xmit.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml fm_xmit.twx fm_xmit.ncd -o fm_xmit.twr fm_xmit.pcf -ucf top_radio.ucf 
+bitgen -intstyle ise -f fm_xmit.ut fm_xmit.ncd 
+xst -intstyle ise -ifn "C:/radio/radio-p/fm_xmit.xst" -ofn "C:/radio/radio-p/fm_xmit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top_radio.ucf -p xc7z010-clg400-1 fm_xmit.ngc fm_xmit.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o fm_xmit_map.ncd fm_xmit.ngd fm_xmit.pcf 
+par -w -intstyle ise -ol high -mt off fm_xmit_map.ncd fm_xmit.ncd fm_xmit.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml fm_xmit.twx fm_xmit.ncd -o fm_xmit.twr fm_xmit.pcf -ucf top_radio.ucf 
+bitgen -intstyle ise -f fm_xmit.ut fm_xmit.ncd 
+xst -intstyle ise -ifn "C:/radio/radio-p/fm_xmit.xst" -ofn "C:/radio/radio-p/fm_xmit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top_radio.ucf -p xc7z010-clg400-1 fm_xmit.ngc fm_xmit.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o fm_xmit_map.ncd fm_xmit.ngd fm_xmit.pcf 
+par -w -intstyle ise -ol high -mt off fm_xmit_map.ncd fm_xmit.ncd fm_xmit.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml fm_xmit.twx fm_xmit.ncd -o fm_xmit.twr fm_xmit.pcf -ucf top_radio.ucf 
+bitgen -intstyle ise -f fm_xmit.ut fm_xmit.ncd 
+xst -intstyle ise -ifn "C:/radio/radio-p/fm_xmit.xst" -ofn "C:/radio/radio-p/fm_xmit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top_radio.ucf -p xc7z010-clg400-1 fm_xmit.ngc fm_xmit.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o fm_xmit_map.ncd fm_xmit.ngd fm_xmit.pcf 
+par -w -intstyle ise -ol high -mt off fm_xmit_map.ncd fm_xmit.ncd fm_xmit.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml fm_xmit.twx fm_xmit.ncd -o fm_xmit.twr fm_xmit.pcf -ucf top_radio.ucf 
+bitgen -intstyle ise -f fm_xmit.ut fm_xmit.ncd 
+xst -intstyle ise -ifn "C:/radio/radio-p/fm_xmit.xst" -ofn "C:/radio/radio-p/fm_xmit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top_radio.ucf -p xc7z010-clg400-1 fm_xmit.ngc fm_xmit.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o fm_xmit_map.ncd fm_xmit.ngd fm_xmit.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top_radio.ucf -p xc7z010-clg400-1 fm_xmit.ngc fm_xmit.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o fm_xmit_map.ncd fm_xmit.ngd fm_xmit.pcf 
+xst -intstyle ise -ifn "C:/radio/radio-p/fm_xmit.xst" -ofn "C:/radio/radio-p/fm_xmit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top_radio.ucf -p xc7z010-clg400-1 fm_xmit.ngc fm_xmit.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o fm_xmit_map.ncd fm_xmit.ngd fm_xmit.pcf 
+par -w -intstyle ise -ol high -mt off fm_xmit_map.ncd fm_xmit.ncd fm_xmit.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml fm_xmit.twx fm_xmit.ncd -o fm_xmit.twr fm_xmit.pcf -ucf top_radio.ucf 
+bitgen -intstyle ise -f fm_xmit.ut fm_xmit.ncd 
+xst -intstyle ise -ifn "C:/radio/radio-p/fm_xmit.xst" -ofn "C:/radio/radio-p/fm_xmit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top_radio.ucf -p xc7z010-clg400-1 fm_xmit.ngc fm_xmit.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o fm_xmit_map.ncd fm_xmit.ngd fm_xmit.pcf 
+par -w -intstyle ise -ol high -mt off fm_xmit_map.ncd fm_xmit.ncd fm_xmit.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml fm_xmit.twx fm_xmit.ncd -o fm_xmit.twr fm_xmit.pcf -ucf top_radio.ucf 
+bitgen -intstyle ise -f fm_xmit.ut fm_xmit.ncd 

@@ -1,0 +1,77 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Jan 12 12:58:30 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "antenna" LOCATE = SITE "V12" LEVEL 1;
+COMP "led" LOCATE = SITE "M14" LEVEL 1;
+COMP "clk_in" LOCATE = SITE "L16" LEVEL 1;
+TIMEGRP clknetwork_clkout0 = BEL "phase_accumulator_0" BEL
+        "phase_accumulator_1" BEL "phase_accumulator_2" BEL
+        "phase_accumulator_3" BEL "phase_accumulator_4" BEL
+        "phase_accumulator_5" BEL "phase_accumulator_6" BEL
+        "phase_accumulator_7" BEL "phase_accumulator_8" BEL
+        "phase_accumulator_9" BEL "phase_accumulator_10" BEL
+        "phase_accumulator_11" BEL "phase_accumulator_12" BEL
+        "phase_accumulator_13" BEL "phase_accumulator_14" BEL
+        "phase_accumulator_15" BEL "phase_accumulator_16" BEL
+        "phase_accumulator_17" BEL "phase_accumulator_18" BEL
+        "phase_accumulator_19" BEL "phase_accumulator_20" BEL
+        "phase_accumulator_21" BEL "phase_accumulator_22" BEL
+        "phase_accumulator_23" BEL "phase_accumulator_24" BEL
+        "phase_accumulator_25" BEL "phase_accumulator_26" BEL
+        "phase_accumulator_27" BEL "phase_accumulator_28" BEL
+        "phase_accumulator_29" BEL "phase_accumulator_30" BEL
+        "phase_accumulator_31" BEL "shift_ctr_0" BEL "shift_ctr_1" BEL
+        "beep_counter_0" BEL "beep_counter_1" BEL "beep_counter_2" BEL
+        "beep_counter_3" BEL "beep_counter_4" BEL "beep_counter_5" BEL
+        "beep_counter_6" BEL "beep_counter_7" BEL "beep_counter_8" BEL
+        "beep_counter_9" BEL "beep_counter_10" BEL "beep_counter_11" BEL
+        "beep_counter_12" BEL "beep_counter_13" BEL "beep_counter_14" BEL
+        "beep_counter_15" BEL "beep_counter_16" BEL "beep_counter_17" BEL
+        "beep_counter_18" BEL "beep_counter_19" BEL "beep_counter_20" BEL
+        "beep_counter_21" BEL "beep_counter_22" BEL "beep_counter_23" BEL
+        "clknetwork/clkout1_buf" BEL "message_0" BEL "message_1" BEL
+        "message_2" BEL "message_3" BEL "message_4" BEL "message_5" BEL
+        "message_6" BEL "message_7" BEL "message_8" BEL "message_9" BEL
+        "message_10" BEL "message_11" BEL "message_12" BEL "message_13" BEL
+        "message_14" BEL "message_15" BEL "message_16" BEL "message_17" BEL
+        "message_18" BEL "message_19" BEL "message_20" BEL "message_21" BEL
+        "message_22" BEL "message_23" BEL "message_24" BEL "message_25" BEL
+        "message_26" BEL "message_27" BEL "message_28" BEL "message_29" BEL
+        "message_30" BEL "message_31" BEL "message_32" BEL "message_33" BEL
+        "message_34" BEL "message_35" BEL "message_36" BEL "message_37" BEL
+        "message_38" BEL "message_39" BEL "message_40" BEL "message_41" BEL
+        "message_42" BEL "message_43" BEL "message_44" BEL "message_45" BEL
+        "message_46" BEL "message_47" BEL "message_48" BEL "message_49" BEL
+        "message_50" BEL "message_51" BEL "message_52" BEL "message_53" BEL
+        "message_54" BEL "message_55" BEL "message_56" BEL "message_57" BEL
+        "message_58" BEL "message_59" BEL "message_60" BEL "message_61" BEL
+        "message_62" BEL "message_63" BEL "message_64" BEL "message_65" BEL
+        "message_66" BEL "message_67" BEL "message_68" BEL "message_69" BEL
+        "message_70" BEL "message_71" BEL "message_72" BEL "message_73" BEL
+        "message_74" BEL "message_75" BEL "message_76" BEL "message_77" BEL
+        "message_78" BEL "message_79" BEL "message_80" BEL "message_81" BEL
+        "message_82" BEL "message_83" BEL "message_84" BEL "message_85" BEL
+        "message_86" BEL "message_87" BEL "message_88" BEL "message_89" BEL
+        "message_90" BEL "message_91" BEL "message_92" BEL "message_93" BEL
+        "message_94" BEL "message_95" BEL "message_96" BEL "message_97" BEL
+        "message_98" BEL "message_99" BEL "message_100" BEL "message_101" BEL
+        "message_102" BEL "message_103" BEL "message_104" BEL "message_105"
+        BEL "message_106" BEL "message_107" BEL "message_108" BEL
+        "message_109" BEL "message_110" BEL "message_111" BEL "message_112"
+        BEL "message_113" BEL "message_114" BEL "message_115" BEL
+        "message_116" BEL "message_117" BEL "message_118" BEL "message_119"
+        BEL "message_120" BEL "message_121" BEL "message_122" BEL
+        "message_123" BEL "message_124" BEL "message_125" BEL "message_126"
+        BEL "message_127" BEL "message_128" BEL "message_129" BEL
+        "message_130" BEL "message_131" BEL "message_132" BEL "message_133"
+        BEL "message_134" BEL "message_135";
+PIN clknetwork/mmcm_adv_inst_pins<2> = BEL "clknetwork/mmcm_adv_inst" PINNAME
+        CLKIN1;
+TIMEGRP clk_in = PIN "clknetwork/mmcm_adv_inst_pins<2>";
+ts_clk_in = PERIOD TIMEGRP "clk_in" 125 MHz HIGH 50%;
+TS_clknetwork_clkout0 = PERIOD TIMEGRP "clknetwork_clkout0" ts_clk_in * 2.56
+        HIGH 50%;
+SCHEMATIC END;
+

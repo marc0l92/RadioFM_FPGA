@@ -1,0 +1,6 @@
+NET clk_in TNM_NET = clk_in;
+NET clk_in LOC =L16;
+NET clk_in IOSTANDARD = LVCMOS33;	
+TIMESPEC ts_clk_in = PERIOD clk_in 125 MHz HIGH 50%; 
+NET antenna LOC = V12	| IOSTANDARD = LVCMOS33; #Sch name = JE1
+NET led     LOC = M14  | IOSTANDARD = LVCMOS33; #IO_L23P_T3_35				

@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=C:\radio\radio-p\impact.xsl
+OUTFILE=C:\radio\radio-p\impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=C:\radio\radio-p
+LICENSE=iMPACT
+USER_INFO=iMPACT

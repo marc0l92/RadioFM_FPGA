@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\radio\radio-p\fm_xmit.ncd
+OUTFILE=C:\radio\radio-p\fm_xmit.bit
+FAMILY=Zynq
+PART=xc7z010-1clg400
+WORKINGDIR=C:\radio\radio-p
+LICENSE=WebPack
+USER_INFO=210985391_0_0_756

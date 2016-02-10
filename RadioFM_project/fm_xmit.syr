@@ -1,0 +1,414 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Reading design: fm_xmit.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "fm_xmit.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "fm_xmit"
+Output Format                      : NGC
+Target Device                      : xc7z010-1-clg400
+
+---- Source Options
+Top Module Name                    : fm_xmit
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\radio\radio-p\ipcore_dir\clk_wiz_v3_6.vhd" into library work
+Parsing entity <clk_wiz_v3_6>.
+Parsing architecture <xilinx> of entity <clk_wiz_v3_6>.
+Parsing VHDL file "C:\radio\radio-p\top_radio.vhd" into library work
+Parsing entity <fm_xmit>.
+Parsing architecture <Behavioral> of entity <fm_xmit>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <fm_xmit> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <clk_wiz_v3_6> (architecture <xilinx>) from library <work>.
+WARNING:HDLCompiler:634 - "C:\radio\radio-p\top_radio.vhd" Line 26: Net <rst_in> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <fm_xmit>.
+    Related source file is "C:\radio\radio-p\top_radio.vhd".
+INFO:Xst:3210 - "C:\radio\radio-p\top_radio.vhd" line 46: Output port <LOCKED> of the instance <clknetwork> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <rst_in> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 2-bit register for signal <shift_ctr>.
+    Found 32-bit register for signal <phase_accumulator>.
+    Found 24-bit register for signal <beep_counter>.
+    Found 136-bit register for signal <message>.
+    Found 2-bit adder for signal <shift_ctr[1]_GND_4_o_add_3_OUT> created at line 1241.
+    Found 32-bit adder for signal <phase_accumulator[31]_GND_4_o_add_6_OUT> created at line 1241.
+    Found 32-bit adder for signal <phase_accumulator[31]_GND_4_o_add_7_OUT> created at line 1241.
+    Found 32-bit adder for signal <phase_accumulator[31]_GND_4_o_add_9_OUT> created at line 1241.
+    Found 24-bit adder for signal <beep_counter[23]_GND_4_o_add_11_OUT> created at line 1241.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred 194 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <fm_xmit> synthesized.
+
+Synthesizing Unit <clk_wiz_v3_6>.
+    Related source file is "C:\radio\radio-p\ipcore_dir\clk_wiz_v3_6.vhd".
+    Summary:
+	no macro.
+Unit <clk_wiz_v3_6> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 2-bit adder                                           : 1
+ 24-bit adder                                          : 1
+ 32-bit adder                                          : 1
+# Registers                                            : 4
+ 136-bit register                                      : 1
+ 2-bit register                                        : 1
+ 24-bit register                                       : 1
+ 32-bit register                                       : 1
+# Multiplexers                                         : 2
+ 32-bit 2-to-1 multiplexer                             : 2
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <fm_xmit>.
+The following registers are absorbed into accumulator <phase_accumulator>: 1 register on signal <phase_accumulator>.
+The following registers are absorbed into counter <beep_counter>: 1 register on signal <beep_counter>.
+The following registers are absorbed into counter <shift_ctr>: 1 register on signal <shift_ctr>.
+Unit <fm_xmit> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 2-bit up counter                                      : 1
+ 24-bit up counter                                     : 1
+# Accumulators                                         : 1
+ 32-bit up accumulator                                 : 1
+# Registers                                            : 136
+ Flip-Flops                                            : 136
+# Multiplexers                                         : 2
+ 32-bit 2-to-1 multiplexer                             : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <fm_xmit> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block fm_xmit, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 194
+ Flip-Flops                                            : 194
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : fm_xmit.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 312
+#      GND                         : 1
+#      INV                         : 9
+#      LUT1                        : 32
+#      LUT2                        : 8
+#      LUT3                        : 136
+#      LUT4                        : 1
+#      LUT5                        : 9
+#      LUT6                        : 5
+#      MUXCY                       : 54
+#      VCC                         : 1
+#      XORCY                       : 56
+# FlipFlops/Latches                : 194
+#      FD                          : 192
+#      FDE                         : 2
+# Clock Buffers                    : 2
+#      BUFG                        : 2
+# IO Buffers                       : 3
+#      IBUFG                       : 1
+#      OBUF                        : 2
+# Others                           : 1
+#      MMCME2_ADV                  : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7z010clg400-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             194  out of  35200     0%  
+ Number of Slice LUTs:                  200  out of  17600     1%  
+    Number used as Logic:               200  out of  17600     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    200
+   Number with an unused Flip Flop:       6  out of    200     3%  
+   Number with an unused LUT:             0  out of    200     0%  
+   Number of fully used LUT-FF pairs:   194  out of    200    97%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                           3
+ Number of bonded IOBs:                   3  out of    100     3%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     32     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clknetwork/clkout0                 | BUFG                   | 194   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 2.426ns (Maximum Frequency: 412.150MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 0.687ns
+   Maximum combinational path delay: 0.000ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clknetwork/clkout0'
+  Clock period: 2.426ns (frequency: 412.150MHz)
+  Total number of paths / destination ports: 5892 / 196
+-------------------------------------------------------------------------
+Delay:               2.426ns (Levels of Logic = 3)
+  Source:            beep_counter_13 (FF)
+  Destination:       message_0 (FF)
+  Source Clock:      clknetwork/clkout0 rising
+  Destination Clock: clknetwork/clkout0 rising
+
+  Data Path: beep_counter_13 to message_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.282   0.745  beep_counter_13 (beep_counter_13)
+     LUT6:I0->O            2   0.053   0.641  beep_counter[23]_PWR_4_o_equal_1_o<23>3 (beep_counter[23]_PWR_4_o_equal_1_o<23>2)
+     LUT6:I2->O          136   0.053   0.588  _n0050_inv1 (_n0050_inv)
+     LUT3:I2->O            1   0.053   0.000  message_0_rstpot (message_0_rstpot)
+     FD:D                      0.011          message_0
+    ----------------------------------------
+    Total                      2.426ns (0.452ns logic, 1.974ns route)
+                                       (18.6% logic, 81.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clknetwork/clkout0'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.687ns (Levels of Logic = 1)
+  Source:            phase_accumulator_31 (FF)
+  Destination:       antenna (PAD)
+  Source Clock:      clknetwork/clkout0 rising
+
+  Data Path: phase_accumulator_31 to antenna
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.282   0.405  phase_accumulator_31 (phase_accumulator_31)
+     OBUF:I->O                 0.000          antenna_OBUF (antenna)
+    ----------------------------------------
+    Total                      0.687ns (0.282ns logic, 0.405ns route)
+                                       (41.0% logic, 59.0% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               0.000ns (Levels of Logic = 1)
+  Source:            clk_in (PAD)
+  Destination:       clknetwork/mmcm_adv_inst:CLKIN1 (PAD)
+
+  Data Path: clk_in to clknetwork/mmcm_adv_inst:CLKIN1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUFG:I->O            0   0.000   0.000  clknetwork/clkin1_buf (clknetwork/clkin1)
+    MMCME2_ADV:CLKIN1          0.000          clknetwork/mmcm_adv_inst
+    ----------------------------------------
+    Total                      0.000ns (0.000ns logic, 0.000ns route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clknetwork/clkout0
+------------------+---------+---------+---------+---------+
+                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------+---------+---------+---------+---------+
+clknetwork/clkout0|    2.426|         |         |         |
+------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 16.00 secs
+Total CPU time to Xst completion: 15.84 secs
+ 
+--> 
+
+Total memory usage is 485736 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

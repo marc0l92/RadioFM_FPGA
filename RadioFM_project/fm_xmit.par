@@ -1,0 +1,175 @@
+Release 14.7 par P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+MARINA-PC::  Mon Jan 12 12:58:36 2015
+
+par -w -intstyle ise -ol high -mt off fm_xmit_map.ncd fm_xmit.ncd fm_xmit.pcf 
+
+
+Constraints file: fm_xmit.pcf.
+Loading device for application Rf_Device from file '7z010.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+   "fm_xmit" is an NCD, version 3.2, device xc7z010, package clg400, speed -1
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 0.950 Volts. (default - Range: 0.950 to 1.050 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.08 2013-10-13".
+
+
+
+Device Utilization Summary:
+
+   Number of BUFGs                           2 out of 32      6%
+   Number of External IOB33s                 3 out of 100     3%
+      Number of LOCed IOB33s                 3 out of 3     100%
+
+   Number of MMCME2_ADVs                     1 out of 2      50%
+   Number of Slices                         58 out of 4400    1%
+   Number of Slice Registers               194 out of 35200   1%
+      Number used as Flip Flops            194
+      Number used as Latches                 0
+      Number used as LatchThrus              0
+
+   Number of Slice LUTS                    200 out of 17600   1%
+   Number of Slice LUT-Flip Flop pairs     200 out of 17600   1%
+
+
+Overall effort level (-ol):   High 
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 22 secs 
+Finished initial Timing Analysis.  REAL time: 22 secs 
+
+Starting Router
+
+
+Phase  1  : 703 unrouted;      REAL time: 23 secs 
+
+Phase  2  : 573 unrouted;      REAL time: 23 secs 
+
+Phase  3  : 23 unrouted;      REAL time: 24 secs 
+
+Phase  4  : 25 unrouted; (Setup:42612, Hold:2088, Component Switching Limit:0)     REAL time: 26 secs 
+
+Updating file: fm_xmit.ncd with current fully routed design.
+
+Phase  5  : 0 unrouted; (Setup:62506, Hold:2041, Component Switching Limit:0)     REAL time: 28 secs 
+
+Phase  6  : 0 unrouted; (Setup:62506, Hold:2041, Component Switching Limit:0)     REAL time: 29 secs 
+
+Phase  7  : 0 unrouted; (Setup:62506, Hold:2041, Component Switching Limit:0)     REAL time: 29 secs 
+
+Phase  8  : 0 unrouted; (Setup:62506, Hold:2041, Component Switching Limit:0)     REAL time: 29 secs 
+
+Phase  9  : 0 unrouted; (Setup:43834, Hold:0, Component Switching Limit:0)     REAL time: 29 secs 
+Total REAL time to Router completion: 29 secs 
+Total CPU time to Router completion: 28 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|              clk320 |BUFGCTRL_X0Y30| No   |   57 |  0.015     |  1.753      |
++---------------------+--------------+------+------+------------+-------------+
+|clknetwork/clkfbout_ |              |      |      |            |             |
+|                 buf |BUFGCTRL_X0Y31| No   |    1 |  0.000     |  1.663      |
++---------------------+--------------+------+------+------------+-------------+
+|   clknetwork/clkin1 |         Local|      |    1 |  0.000     |  1.285      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 43834 (Setup: 43834, Hold: 0, Component Switching Limit: 0)
+
+WARNING:Par:468 - Your design did not meet timing.  The following are some suggestions to assist you to meet timing in your design.
+
+   Review the timing report using Timing Analyzer (In ISE select "Post-Place &
+   Route Static Timing Report"). Go to the failing constraint(s) and evaluate the failing paths for each constraint.
+
+   Try the Design Goal and Strategies for Timing Performance(In ISE select Project -> Design Goals & Strategies) to ensure the best options
+   are set in the tools for timing closure.
+
+   Use the Xilinx "SmartXplorer" script to try special combinations of
+   options known to produce very good results.
+
+   Visit the Xilinx technical support web at http://support.xilinx.com and go to
+   either "Troubleshoot->Tech Tips->Timing & Constraints" or "
+   TechXclusives->Timing Closure" for tips and suggestions for meeting timing
+   in your design.
+
+Number of Timing Constraints that were not applied: 1
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+* TS_clknetwork_clkout0 = PERIOD TIMEGRP "c | SETUP       |    -0.535ns|     3.660ns|     134|       43834
+  lknetwork_clkout0" ts_clk_in * 2.56       | HOLD        |     0.177ns|            |       0|           0
+     HIGH 50%                               |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  ts_clk_in = PERIOD TIMEGRP "clk_in" 125 M | MINLOWPULSE |     4.000ns|     4.000ns|       0|           0
+  Hz HIGH 50%                               |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Review Timing Report for more details on the following derived constraints.
+To create a Timing Report, run "trce -v 12 -fastpaths -o design_timing_report design.ncd design.pcf"
+or "Run Timing Analysis" from Timing Analyzer (timingan).
+Derived Constraints for ts_clk_in
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|ts_clk_in                      |      8.000ns|      4.000ns|      9.370ns|            0|          134|            0|         5892|
+| TS_clknetwork_clkout0         |      3.125ns|      3.660ns|          N/A|          134|            0|         5892|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+1 constraint not met.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 31 secs 
+Total CPU time to PAR completion: 29 secs 
+
+Peak Memory Usage:  655 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+Timing: Completed - 134 errors found.
+
+Number of error messages: 0
+Number of warning messages: 1
+Number of info messages: 0
+
+Writing design to file fm_xmit.ncd
+
+
+
+PAR done!
